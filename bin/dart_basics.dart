@@ -1,17 +1,16 @@
-// Inheritance
-
-class Animal {
-  late String name;
-  late int legCount;
+enum Color {
+  red,
+  green,
+  blue,
 }
 
-class Cat extends Animal {
-  void makeNoise() {
-    print("Merrrrr");
+void updateColor(Color color) {
+  switch (color) {
+    case Color.red:
+    // do stuff
+    case Color.green:
+    // do stuff
+    case Color.blue:
+    // do stuff
   }
-}
-
-void main(List<String> args) {
-  Cat cat = Cat();
-  cat.makeNoise();
 }
