@@ -1,16 +1,7 @@
-enum Color {
-  red,
-  green,
-  blue,
+class Animal {
+  String name;
+  int legCount;
+  Animal({required this.name, required this.legCount});
 }
 
-void updateColor(Color color) {
-  switch (color) {
-    case Color.red:
-    // do stuff
-    case Color.green:
-    // do stuff
-    case Color.blue:
-    // do stuff
-  }
-}
+Animal cat = Animal(name: 'Cat', legCount: 13);
